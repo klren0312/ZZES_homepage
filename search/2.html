@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+		<script src="//unslider.com/unslider.js"></script>
+		<style>
+			.banner{
+				position: relative;
+				overflow: auto;
+				.banner li{
+					list-style: none;
+				}
+				.banner ul li{
+					float: left;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<ul>
+				<li>this is a slide</li>
+				<li>this is a slide</li>
+				<li>this is a slide</li>
+			</ul>
+		</div>
+		<div class='block'>
+    <span class='badge icon icon-gear'>4</span>
+    <span class='badge badge-info icon icon-cloud-download'>13</span>
+    <span class='badge badge-success icon icon-octoface'>5</span>
+</div>
+		<script>
+			$(function(){
+				$('.banner').unslider();
+			});
+		</script>
+	</body>
+</html>
