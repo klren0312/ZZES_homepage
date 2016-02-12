@@ -162,62 +162,57 @@
         </footer>
         <!--页尾----------------------------end------------------------------------------------------------>
   			
-	<script >
-		var num1;
+		<script >
+		//数字输入函数
 		function number(num){
-			var kuang=document.getElementById("change");
-			kuang.value+=num.value;
-			num1=kuang.value;
+		var kuang=document.getElementById("change");
+		var zhengze=/\b=\b/;
+		var test=zhengze.exec(kuang.value)
+		//判断是否完成计算，计算完成即清零
+		if(test=="=")
+		{
+		test="";
+		kuang.value=""
 		}
-
-		
+		kuang.value+=num.value;
+		}
+		 
+		//退格函数
 		function tuige(){
-			var kuang=document.getElementById("change");
-			kuang.value=kuang.value.substring(0,kuang.value.length-1);
+		var kuang=document.getElementById("change");
+		kuang.value=kuang.value.substring(0,kuang.value.length-1);
 		}
-
-		
+		 
+		//清零函数
 		function qingchu(){
-			var kuang=document.getElementById("change");
-		 	kuang.value="";
+		var kuang=document.getElementById("change");
+		kuang.value="";
 		}
-
-
+		 
+		//输入计算符号
 		function jisuan(fuhao){
-			var kuang=document.getElementById("change");
-			fuhao1=fuhao.value;
-			kuang.value+=fuhao1;
+		var kuang=document.getElementById("change");
+		fuhao1=fuhao.value;
+		kuang.value+=fuhao1;
 		}
-
+		 
+		//判断符号正确性，输出结果
 		function result(){
-			var kuang=document.getElementById("change");
-			var result;
-			alert(num1);
-			// alert(fuhao1);
-			if (fuhao1="+")
-			 {
-			 	result=parseFloat(num1);
-			 }
-
-			 else if (fuhao1="-")
-			 {
-			 	result=num1-num1;
-			 }
-
-			 else if (fuhao1="*")
-			 {
-			 	result=num1*num1;
-			 }
-
-			 else if (fuhao1="/")
-			 {
-			 	result=num1/num1;
-			 }
-
-			 kuang.value=result;
+		 
+		var kuang=document.getElementById("change");
+		 
+		//判断符号正确性
+		var zhengze2=/\d\D\d/;
+		var fuhao2=zhengze2.exec(kuang.value);
+		if (fuhao2===null) {
+		alert("error");
 		}
-
-		
+		else{
+		 
+		var result=eval(kuang.value);
+		kuang.value=kuang.value+"="+result;}
+		}
+		 
 
 		</script>
 		
