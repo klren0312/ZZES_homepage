@@ -93,13 +93,8 @@ BB%W#MM#Wkoa#WWMMM**W8$@B$$@BB@Wo*kaB@@B@BB@$$@@BM*#ahaoo**#M#&M&&W&**okwkoW88&b
         <link rel="stylesheet" href="css/icons.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="http://api.map.baidu.com/components?ak=ow4BIvqzQEV4dCiuVjuVG0vm&v=1.0"></script>
+        <script src="https://togetherjs.com/togetherjs-min.js"></script>
       	
-      	<style type="text/css">
-      		.image{
-      			height: 350px;
-      			width: 330px;
-      		}
-      	</style>
 
     </head>
     <body style="background: #333333;">
@@ -133,6 +128,7 @@ BB%W#MM#Wkoa#WWMMM**W8$@B$$@BB@Wo*kaB@@B@BB@$$@@BM*#ahaoo**#M#&M&&W&**okwkoW88&b
 							<li><a href="movie.html"><span class="glyphicon glyphicon-film">相关视频</span></a></li>
 							<li><a href="contest.html"><span class="glyphicon glyphicon-envelope">联系我们</span></a></li>
 							<li><a href="jisuanqi.html" target="_blank"><span class="glyphicon glyphicon-list-alt">计算器</span></a></li>
+              <li><a href="pdf.html" target="_blank"><span class="glyphicon glyphicon-list-alt">PDF阅读器</span></a></li>
 					      </ul>
 					      
 					      <form action="http://www.baidu.com/baidu" target="_blank" class="navbar-form navbar-left" role="search">
@@ -160,22 +156,26 @@ BB%W#MM#Wkoa#WWMMM**W8$@B$$@BB@Wo*kaB@@B@BB@$$@@BM*#ahaoo**#M#&M&&W&**okwkoW88&b
         </header>
         <!--页头--------------------------------end-------------------------------------------------------->
 		
-		<br /><br />
+		<br /><br /><br /><br>
         
 		<!--插入视频-->
         
-        <div class="embed-responsive embed-responsive-4by3">
-  			<iframe class="embed-responsive-item" src="http://player.youku.com/player.php/sid/XMTMyMjEyOTMwNA==/v.swf"></iframe>
-		</div>
-        <script src='http://git.oschina.net/klren/ZZES--web/widget_preview'></script>
-
+        <div class="col-md-12">
+  			   <iframe class="col-md-12 col-sm-6" style="height:400px;"src="http://player.youku.com/player.php/sid/XMTMyMjEyOTMwNA==/v.swf" ></iframe>
+		    </div>
+    <br><br>   
+    <button class="btn btn-info col-md-12" onclick="TogetherJS(this); return false;">点击开启团队协作模式</button>
+    <br>
 		<!--插入伙伴-->
-	
-		<img src="img/image/未标题-1-恢复的.jpg" class="image" />
-		<img src="333.gif" class="image" />
-		<img src="img/image/望创图标副本.jpg" class="image" />
-		<img src="img/image/治中电科tubiao2.jpg" class="image" />
-
+	<div class="col-md-12 col-sm-6">
+		<img src="img/image/未标题-1-恢复的.jpg" class="col-md-3 col-sm-2" />
+		<img src="333.gif" class="col-md-3 col-sm-2" />
+		<img src="img/image/望创图标副本.jpg" class="col-md-3 col-sm-2" />
+		<img src="img/image/治中电科tubiao2.jpg" class="col-md-3 col-sm-2" />
+  </div>
+  <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="任治中" data-title="about" data-url="http://klren0312-zzes5.daoapp.io/about.html"></div>
+  <!-- 多说评论框 end -->
 
         <footer role="contentinfo">
         	<p><small>copyright &copy;
@@ -204,7 +204,19 @@ BB%W#MM#Wkoa#WWMMM**W8$@B$$@BB@Wo*kaB@@B@BB@$$@@BM*#ahaoo**#M#&M&&W&**okwkoW88&b
 	 
         
 		
-			
+			<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+      <script type="text/javascript">
+      var duoshuoQuery = {short_name:"zzes5"};
+        (function() {
+          var ds = document.createElement('script');
+          ds.type = 'text/javascript';ds.async = true;
+          ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+          ds.charset = 'UTF-8';
+          (document.getElementsByTagName('head')[0] 
+           || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+        </script>
+      <!-- 多说公共JS代码 end -->
 
 		<!--js代码-->
        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
