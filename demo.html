@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>drag demo</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+.box { position: fixed; left:100px; top:50px; width:300px; height:130px; background-color: #fff; box-shadow: 0 0 5px rgba(0,0,0,.3); font-size:12px; }
+.box .box-ht { padding:10px; border-bottom: 2px solid #d32; }
+.box .box-bd { padding:30px; }
+
+.box-1 { left:500px;}
+</style>
+</head>
+<body>
+
+    <p>test text.</p>
+	<p>test text.</p>
+	<p>test text.</p>
+	<p>test text.</p>
+
+	<div class="box">
+		<div class="box-ht">这里是标题</div>
+		<div class="box-bd">这里是内容</div>
+	</div>
+	<div class="box box-1">
+		<div class="box-ht">这里是标题</div>
+		<div class="box-bd">这里是内容</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+<script src="http://libs.baidu.com/jquery/1.8.1/jquery.min.js"></script>
+<script src="js/jQuery.drag.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$('.box-ht').drag();
+</script>
+</body>
+</html>
